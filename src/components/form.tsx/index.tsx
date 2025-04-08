@@ -3,7 +3,6 @@ import React from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
-import { Textarea } from "../ui/textarea";
 
 export function Form() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -41,7 +40,7 @@ export function Form() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <Textarea id="message" placeholder="write your message" type="text" />
+          <Input id="message" placeholder="write your message" type="text" />
         </LabelInputContainer>
         
         
